@@ -17,6 +17,7 @@ Requirements:
 
  Creating the vault file with AWS credentials:
  ansible-vault view vars/ec2adm_cred.yml
+ 
  Vault password: 
  acc_key: <put_your_access_key_here>
  sec_key: <put_your_secret_key_here>
@@ -38,6 +39,7 @@ lebreda:tech_test$
 
 AWS Environment:
 My AWS environment before running this playbook:
+![image](https://user-images.githubusercontent.com/108529920/200081633-c1ec4dc6-b8b8-4365-8e7b-894a28e293b4.png)
 
 
 

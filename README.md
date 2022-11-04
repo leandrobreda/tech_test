@@ -29,10 +29,10 @@
  Bellow all tasks performed by this playbook are listed and explained:
 
 ```
-lebreda:tech_test$ ansible-playbook test.yaml --ask-vault-password --list-tasks
+lebreda:tech_test$ ansible-playbook tech_challenge.yaml --ask-vault-password --list-tasks
 Vault password: 
 
-playbook: test.yaml
+playbook: tech_challenge.yaml
 
   play #1 (localhost): Manage EC2 instances	TAGS: []
     tasks:

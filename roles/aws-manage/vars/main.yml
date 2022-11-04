@@ -1,0 +1,15 @@
+---
+# vars file for roles/aws-manage
+
+# KEY
+key: ec2adm_key
+
+# Network
+subnet: subnet-0384fea6abac1cec2
+region: sa-east-1
+vpc: vpc-00e61cf0e3569035e
+secgroup: "webgroup"
+
+# EC2 info
+img: ami-0122c4b16734197ac
+inst_type: t2.micro

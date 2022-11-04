@@ -1,0 +1,27 @@
+---
+- name: Provision an AWS instances
+  amazon.aws.ec2_instance:
+    name: webserver1
+    key_name: "{{ key }}"
+    instance_type: "{{ inst_type }}"
+    image_id: "{{ img }}"
+    security_group: "{{ secgroup }}"
+    region: "{{ region }}"
+    vpc_subnet_id: "{{ subnet }}"
+    network:
+      assign_public_ip: true
+      delete_on_termination: true
+    aws_access_key: "{{ acc_key }}"
+    aws_secret_key: "{{ sec_key }}"
+    state: present
+    wait: true
+    count: 1
+    user_data: "{{ lookup('file', './files/http_install.sh') }}"
+    tags:
+      Environment: Testing
+  register: ec2
+
+- name: Inform new create AWS instance IP
+  debug:
+    var: ec2
+...

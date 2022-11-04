@@ -1,0 +1,10 @@
+---
+# tasks file for roles/aws-manage
+- name: Create a subnet security group
+  import_tasks: vpc_secgroup.yml
+
+- name: Import key pair for instances
+  import_tasks: ec2_keypair.yml
+
+- name: Create EC2 instance
+  import_tasks: ec2_provision.yml

@@ -1,0 +1,11 @@
+---
+- name: Manage EC2 instances
+  hosts: localhost
+  gather_facts: false
+  vars_files: 
+    - ./vars/ec2adm_cred.yml
+  collections:
+    - community.aws
+  roles:
+    - aws-manage
+...

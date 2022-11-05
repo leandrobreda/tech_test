@@ -13,3 +13,4 @@ secgroup: "webgroup"
 # EC2 info
 img: ami-0122c4b16734197ac
 inst_type: t2.micro
+...

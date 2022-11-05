@@ -19,9 +19,6 @@
     user_data: "{{ lookup('file', './files/http_install.sh') }}"
     tags:
       Environment: Testing
+      Creation_type: Ansible
   register: ec2
-
-- name: Inform new create AWS instance IP
-  debug:
-    var: ec2
 ...

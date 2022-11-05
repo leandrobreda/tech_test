@@ -6,4 +6,6 @@
     aws_access_key: "{{ acc_key }}"
     aws_secret_key: "{{ sec_key }}"
     key_material: "{{ lookup('file', '/home/lebreda/.ssh/id_rsa.pub') }}"
+    tags:
+      creation_type: Ansible
 ...
